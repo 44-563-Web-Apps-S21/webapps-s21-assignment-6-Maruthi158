@@ -44,6 +44,42 @@ function processGuess(){
     }
 }
 </script>
+<div class="container">
+    <img src="HACKBERRY.jpg" height="200" width="200"  id="image" 
+    class="img-fluid" alt="Responsive image"/>
+    <img src="TALINUM.jpg"  height="200" width="200"  id="image"
+    class="img-fluid" alt="Responsive image" />
+   <img src="UMBRELLA_PINE.jpg" height="200" width="200" id="image"
+        class="img-fluid" alt="Responsive image" />
+        <br>
+        <input type="button" onclick="rotateImage()" value="Select Image">
+    </div>
+    
+<script>
+    var currentImage=0;
+    function rotateImage(){
+       
+        var Image_Id = document.getElementById('image');
+        switch(currentImage){
+            case 0:
+            Image_Id.src = "HACKBERRY.jpg";
+            currentImage++;
+            break;
+
+            case 1:
+            Image_Id.src = "TALINUM.jpg";
+            currentImage++;
+            break;
+            case 2:
+            Image_Id.src = "UMBRELLA_PINE.jpg";
+            currentImage++;
+            break;
+            
+        }
+            
+        }        
+    
+</script>
 
 </body>
 </html> 
