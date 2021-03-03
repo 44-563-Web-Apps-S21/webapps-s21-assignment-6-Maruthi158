@@ -24,6 +24,18 @@
 
     <input type="button" onclick="startbear()" value="Start a bear">
   </form>
+  <form>
+    <label for="property">Enter a property</label>
+    <input type ="text" id="property_name" name="property" value="color"> 
+    </br>
+    
+    <label for="value">Enter a value</label>
+    <input type ="text" id="value" name="value">
+    </br>
+
+    <input type="button" onclick="updatebear()" value="Update the bear">
+
+</form>
   <p id="result">This result will be shown here</p>
 
 
@@ -50,6 +62,15 @@ function startbear(){
         my_bear["shirt"]=false;
     }
     
+    out = document.getElementById("result")
+    my_bear= JSON.stringify(my_bear);
+    out.innerHTML=my_bear
+    my_bear= JSON.parse(my_bear)
+}
+function updatebear(){
+    var property_name=document.getElementById("property_name").value;
+    var value=document.getElementById("value").value;
+    my_bear[property_name]=value;
     out = document.getElementById("result")
     my_bear= JSON.stringify(my_bear);
     out.innerHTML=my_bear
