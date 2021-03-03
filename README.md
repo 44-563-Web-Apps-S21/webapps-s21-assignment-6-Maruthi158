@@ -5,4 +5,4 @@ hosted at  https://44-563-web-apps-s21.github.io/webapps-s21-assignment-6-Maruth
 <br>
 hosted at  https://44-563-web-apps-s21.github.io/webapps-s21-assignment-6-Maruthi158/arithmetic.html
 <br>
-hosted at  https://44-563-web-apps-s21.github.io/webapps-s21-assignment-6-Maruthi158/ber.html
+hosted at  https://44-563-web-apps-s21.github.io/webapps-s21-assignment-6-Maruthi158/bear.html
