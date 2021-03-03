@@ -22,7 +22,26 @@
 </form>
 
 
-<p id="result">This text will be replaced </p>
+<p id="result">The result will be shown here </p>
+<form>
+    <input type="radio" id="plus" name="plus" value="plus">
+    <label for="plus">+</label></br>
+  
+    <input type="radio" id="minus" name="minus" value="minus">
+    <label for="minus">-</label></br>
+
+    <input type="radio" id="star" name="star" value="times">
+    <label for="times">*</label></br>
+
+    <input type="radio" id="divide" name="divide" value="divide">
+    <label for="divide">/</label></br>
+  
+
+    <input type="button" onclick="processRadio()" value="Get values from radio group">
+  </form>
+
+  <p id="result1">The result will be shown here</p>
+
 
 <script> 
 
@@ -41,6 +60,30 @@ do{
 
 out = document.getElementById("result")
 out.innerHTML = first+" permute "+second+" is "+product
+}
+function processRadio(){
+    first = document.getElementById("form1_first").value
+    second = document.getElementById("form1_second").value
+
+    first=parseInt(first);
+    second=parseInt(second);
+
+    if(document.getElementById("plus").checked){
+        first =first+ second;
+
+    }else if(document.getElementById("minus").checked){
+        first=first-second;
+
+    }else if(document.getElementById("star").checked){
+        first=first* second;
+
+    }else{
+        first =first/second;
+    }
+
+    out = document.getElementById("result1")
+    out.innerHTML = first
+    
 }
 </script>
 
